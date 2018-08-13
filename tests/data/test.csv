@@ -1,0 +1,49 @@
+#      
+#   DShield.org Recommended Block List 
+#    (c) 2018 DShield.org
+#   some rights reserved. Details http://creativecommons.org/licenses/by-nc-sa/2.5/
+#   use on your own risk. No warranties implied.
+#   primary URL: http://feeds.dshield.org/block.txt
+#     PGP Sign.: http://feeds.dshield.org/block.txt.asc
+#
+#   comments: info@dshield.org
+#    updated: Wed Jul 11 12:30:05 2018 UTC
+#   
+#    This list summarizes the top 20 attacking class C (/24) subnets
+#   over the last three days. The number of 'attacks' indicates the 
+#   number of targets reporting scans from this subnet.
+#
+#
+#    Columns (tab delimited):
+#
+#    (1) start of netblock  
+#    (2) end of netblock
+#    (3) subnet (/24 for class C)
+#    (4) number of targets scanned
+#    (5) name of Network 
+#    (6) Country
+#    (7) contact email address
+#
+#    If a range is assigned to multiple users, the first one is listed. 
+#     
+Start	End	Netmask	Attacks	Name	Country	email
+111.37.20.0	111.37.20.255	24	4123	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+111.37.21.0	111.37.21.255	24	4102	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+181.214.87.0	181.214.87.255	24	4051	WZCOM-US - WZ Communications Inc.,	US	abuse@webazilla.com
+194.28.115.0	194.28.115.255	24	4021	HOSTMASTER-AS ,	MD	support@ix-host.ru
+78.128.112.0	78.128.112.255	24	3427	POWERNET-AS ,	BG	abuse@lir.bg
+92.63.193.0	92.63.193.255	24	3213	ITDELUXE-AS ,	RU	support@itdeluxe.com
+223.96.156.0	223.96.156.255	24	3210	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+223.96.152.0	223.96.152.255	24	3027	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+223.81.204.0	223.81.204.255	24	2996	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+185.170.42.0	185.170.42.255	24	2810	ASDETUK http://www.host1plus.com,	GB	abuse@host1plus.com
+111.37.29.0	111.37.29.255	24	2798	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+111.37.28.0	111.37.28.255	24	2786	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+196.52.43.0	196.52.43.255	24	2759	LEASEWEB-NL Netherlands,	NL	abuse@nl.leaseweb.com
+46.161.27.0	46.161.27.255	24	2746	NO_N	ZZ	no email on file
+223.81.192.0	223.81.192.255	24	2510	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+77.72.85.0	77.72.85.255	24	2378	NETUP-AS ,	RU	aospan@netup.ru
+5.188.86.0	5.188.86.255	24	2226	PIN-AS ,	RU	abuse@pinspb.ru
+223.81.193.0	223.81.193.255	24	2138	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
+109.248.9.0	109.248.9.255	24	2113	DGRID ,	EE	abuse@linxtelecom.net
+111.37.25.0	111.37.25.255	24	2108	CMNET-GD Guangdong Mobile Communication Co.Ltd.,	CN	ipas@cnnic.cn
