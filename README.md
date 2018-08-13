@@ -1,10 +1,7 @@
 # CSV to JSON
-![Pipeline status](https://gitlab.com/fhightower/csv_to_json/badges/master/build.svg)
+![Pipeline status](https://gitlab.com/fhightower/csv-to-json/badges/master/build.svg)
 
 Convert CSV to JSON.
-
-* Free software: MIT license
-* Documentation: https://csv-to-json.readthedocs.io
 
 ## Usage
 

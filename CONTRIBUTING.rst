@@ -15,7 +15,7 @@ Types of Contributions
 Report Bugs
 -----------
 
-Report bugs at https://gitlab.com/fhightower/csv_to_json/issues.
+Report bugs at https://gitlab.com/fhightower/csv-to-json/issues.
 
 If you are reporting a bug, please include:
 
@@ -45,7 +45,7 @@ articles, and such.
 Submit Feedback
 ---------------
 
-The best way to send feedback is to file an issue at https://gitlab.com/fhightower/csv_to_json/issues.
+The best way to send feedback is to file an issue at https://gitlab.com/fhightower/csv-to-json/issues.
 
 If you are proposing a feature:
 

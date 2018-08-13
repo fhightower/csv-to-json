@@ -24,7 +24,7 @@ setup(
     long_description=readme,
     author="Floyd Hightower",
     author_email='floyd.hightower27@gmail.com',
-    url='https://gitlab.com/fhightower/csv_to_json',
+    url='https://gitlab.com/fhightower/csv-to-json',
     packages=find_packages(exclude=('tests', 'docs')),
     include_package_data=True,
     install_requires=requirements,
