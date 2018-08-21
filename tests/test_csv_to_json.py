@@ -5,7 +5,6 @@
 import os
 
 import pytest
-import requests
 
 from csv_to_json import csv_to_json
 
