@@ -53,3 +53,14 @@ def test_csv_without_column_names():
 
     assert converted_data[0]['a'] == '1'
     assert converted_data[0]['b'] == 'test, ing'
+
+
+def test_hpfeeds_tsv():
+    data = _get_csv_data('./data/hp_hosts.csv')
+    converted_data = csv_to_json.convert(data, delimiter='\t')
+    assert len(converted_data) == 1158
+    # make sure the lines with real data are handled properly
+    assert converted_data[2]['b'] == '115qxw.hbg.hebdenbridgedental.co.uk'
+    # make sure the lines with some data missing are handled properly (with only one entry (`a`))
+    assert converted_data[0] == {'a': '127.0.0.1 localhost #IPv4 localhost'}
+    assert not converted_data[0].get('b')
