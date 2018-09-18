@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='csv_to_json',
-    version='0.1.0',
+    version='0.1.1',
     description="Convert CSV to JSON.",
     long_description=readme,
     author="Floyd Hightower",
