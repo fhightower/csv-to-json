@@ -64,3 +64,13 @@ def test_hpfeeds_tsv():
     # make sure the lines with some data missing are handled properly (with only one entry (`a`))
     assert converted_data[0] == {'a': '127.0.0.1 localhost #IPv4 localhost'}
     assert not converted_data[0].get('b')
+
+
+def test_unicode_data():
+    data = _get_csv_data('./data/test_encoded_data.csv')
+    converted_data = csv_to_json.convert(data, delimiter='\t')
+    assert len(converted_data) == 57
+    assert converted_data[0]['a'] == '127.0.0.1'
+    assert converted_data[0]['b'] == 'bireysel---sube--giris--tr.com'
+    assert converted_data[9]['a'] == '127.0.0.1'
+    assert converted_data[9]['b'] == 'bireysel-zîraat.com'
