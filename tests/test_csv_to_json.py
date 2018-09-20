@@ -74,3 +74,20 @@ def test_unicode_data():
     assert converted_data[0]['b'] == 'bireysel---sube--giris--tr.com'
     assert converted_data[9]['a'] == '127.0.0.1'
     assert converted_data[9]['b'] == 'bireysel-zîraat.com'
+
+
+def test_with_empty_lines():
+    data = """Test
+# License: GPLv3
+# Contact: support [at] disconnect.me
+
+a.de
+b.com
+
+c.nl
+d.com"""
+    converted_data = csv_to_json.convert(data, delimiter='\t')
+    assert len(converted_data) == 5
+    assert converted_data[1]['a'] == 'a.de'
+    assert converted_data[2]['a'] == 'b.com'
+    assert converted_data[3]['a'] == 'c.nl'

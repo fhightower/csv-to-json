@@ -15,6 +15,10 @@ import string
 def _remove_commented_rows(rows, comment_character):
     uncommented_rows = list()
     for row in rows:
+        # if the row is empty, move on
+        if len(row) == 0:
+            continue
+        # if the row does not start with the comment character, record it
         if not row[0].startswith(comment_character):
             uncommented_rows.append(row)
     return uncommented_rows
