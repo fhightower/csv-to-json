@@ -1,7 +1,8 @@
 # CSV to JSON
+
 ![Pipeline status](https://gitlab.com/fhightower/csv-to-json/badges/master/build.svg)
 
-Convert CSV to JSON.
+Convert CSV to JSON. There is a testing/debugging interface [here](https://hub.mybinder.org/user/fhightower-csv-to-json-hkqr8zl5/tree).
 
 ## Usage
 
