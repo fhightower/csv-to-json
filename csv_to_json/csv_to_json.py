@@ -47,14 +47,8 @@ def convert(csv_string, delimiter=',', comment_character='#', heading_row=None, 
 
     # get the keys for the json from the CSV
     if heading_row is not None:
-        # if the heading row is zero, assume that the user wants to use the first row
-        if heading_row == 0:
-            print('I\'m going to assume that you want to use the first row as the heading_row. In the future, use the natural, counting number to specify the correct heading row (e.g. 1 specifies the first row, 2 specifies the second row, etc...)')
-        # otherwise, assume that the user is using natural counting numbers to specify the heading row
-        else:
-            _debug(debug, 'The user gave {} as the heading_row. I\'m going to take the headings from the row at index {}.'.format(heading_row, int(heading_row) - 1))
-            heading_row = int(heading_row) - 1
-        _debug(debug, 'Using the heading from row {} to get the keys:\n{}'.format(heading_row, uncommented_rows[heading_row]))
+        _debug(debug, 'Using {} as the heading_row.'.format(heading_row))
+        heading_row = int(heading_row)
         keys = uncommented_rows[heading_row]
         del uncommented_rows[heading_row]
     # get the keys for the json from ascii characters

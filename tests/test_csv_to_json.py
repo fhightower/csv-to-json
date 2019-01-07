@@ -17,7 +17,7 @@ def _get_csv_data(file_path='./data/test.csv'):
 
 def test_csv_to_json():
     data = _get_csv_data()
-    converted_data = csv_to_json.convert(data, delimiter='\t', heading_row=1)
+    converted_data = csv_to_json.convert(data, delimiter='\t', heading_row=0)
     assert len(converted_data) == 20
 
     assert converted_data[0]['Start'] == '111.37.20.0'
@@ -39,7 +39,7 @@ def test_csv_to_json():
 
 def test_csv_quotation_mark_escaping():
     data = _get_csv_data('./data/test_quotation_mark_escaping.csv')
-    converted_data = csv_to_json.convert(data, heading_row=1)
+    converted_data = csv_to_json.convert(data, heading_row=0)
     assert len(converted_data) == 2
 
     assert converted_data[0]['A'] == '1'
