@@ -4,8 +4,6 @@
 
 import os
 
-import pytest
-
 from csv_to_json import csv_to_json
 
 

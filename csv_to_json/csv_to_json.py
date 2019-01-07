@@ -12,7 +12,6 @@ import csv
 import string
 
 
-
 def _debug(debug, message):
     """Print the given message if debugging is true."""
     if debug:
